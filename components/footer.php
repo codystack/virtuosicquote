@@ -34,7 +34,7 @@
                 buttons: false,
                 timer: 4000
             }).then(function() {
-                window.location = "./quote";
+                window.location = "./";
             });
         </script>
     <?php

@@ -1,10 +1,11 @@
 <?php
 include "./components/header.php";
 include "./components/navbarlight.php";
+require_once "./auth/devquote.php";
 ?>
 
     <!-- hero section -->
-    <section class="bg-opaque-green vh-100">
+    <section class="bg-white vh-100">
         <div class="container d-flex flex-column py-20">
             <div class="row align-items-center justify-content-center justify-content-lg-between mt-lg-10">
                 <div class="col-md-10 col-lg-5 text-center text-lg-start level-3">
@@ -47,7 +48,7 @@ include "./components/navbarlight.php";
                         </div>
                         <div class="col-md-6">
                             <label for="siteAbout" class="form-label">What's your site about?</label>
-                            <select class="form-select" required aria-label="Default select example">
+                            <select class="form-select" name="siteAbout" required aria-label="Default select example">
                                 <option selected=""></option>
                                 <option value="Travel">Travel</option>
                                 <option value="Gaming">Gaming</option>
@@ -75,7 +76,7 @@ include "./components/navbarlight.php";
                         </div>
                         <div class="col-md-6">
                             <label for="goals" class="form-label">What are your top goals?</label>
-                            <select class="form-select" required aria-label="Default select example">
+                            <select class="form-select" name="goals" required aria-label="Default select example">
                                 <option selected=""></option>
                                 <option value="Promote an event or project">Promote an event or project</option>
                                 <option value="Promote a physical business">Promote a physical business</option>
@@ -88,7 +89,7 @@ include "./components/navbarlight.php";
                         </div>
                         <div class="col-md-6">
                             <label for="process" class="form-label">Where are you in your process?</label>
-                            <select class="form-select" required aria-label="Default select example">
+                            <select class="form-select" name="process" required aria-label="Default select example">
                                 <option selected=""></option>
                                 <option value="Collecting inspiration">Collecting inspiration</option>
                                 <option value="Formalizing an idea or personal project">Formalizing an idea or personal project</option>
@@ -98,7 +99,7 @@ include "./components/navbarlight.php";
                             </select>
                         </div>
                         <div class="col-md-12">
-                            <label for="comment" class="form-label">Give us a summary of your project</label>
+                            <label for="anyComment" class="form-label">Give us a summary of your project</label>
                             <textarea class="form-control" required name="anyComment" rows="3"></textarea>
                         </div>
                         <div class="col-md-12 d-grid">
