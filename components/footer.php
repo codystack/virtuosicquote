@@ -2,6 +2,7 @@
     <script src="assets/js/vendor.js"></script>
     <script src="assets/js/index.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="//code.tidio.co/rp0dtw2vjelt1bev0dzhuk4t2r7qvrpo.js" async></script>
 
     <?php
         if (isset($_SESSION['message'])) {
